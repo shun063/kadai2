@@ -38,9 +38,9 @@
     var mat = new THREE.MeshPhongMaterial();
     mat.map = texture;
 
-    // 木テクスチャー読み込み
+    // テクスチャー読み込み
     var textureLoader = new THREE.TextureLoader();
-    var texture0 = textureLoader.load("tree0.png");
+    var texture0 = textureLoader.load("tibani.png");
     // 板ポリ左用
     var mat0 = new THREE.MeshLambertMaterial();
     mat0.map = texture0;
@@ -48,9 +48,9 @@
     var mat1 = new THREE.MeshLambertMaterial({transparent: true});
     mat1.map = texture0;
 
-    // 木をスプライトで作成
+    // スプライトで作成
     var textureLoader = new THREE.TextureLoader();
-    var texture = textureLoader.load("tree0.png");
+    var texture = textureLoader.load("tibani.png");
     const material = new THREE.SpriteMaterial({ map: texture0,});
     // 木左
     const sprite1 = new THREE.Sprite(material);
